@@ -1,0 +1,50 @@
+{
+	"title": "Home Page",
+	"header": "Welcome to the website of Faith Alive Fellowship!",
+	"meta_content": "Welcome to Faith Alive Fellowship, we're happy you are here and would love to hear from you. In the meantime, please feel free to check out our site, we love you!",
+	"exclude": false,
+	"header_content":"",
+	"content": "
+	We are currently in the first phase of updating and making our website more mobile and tablet friendly. Most if not all images have been removed, but will
+	be making a return soon. Please stay tuned here as well as social media for updates and enjoy the website. 
+
+<div class='linkHolder'>
+	<div class='post limited'>
+		<form id='donate' action=\"https://www.paypal.com/cgi-bin/webscr\" method=\"post\">
+			<input name=\"cmd\" value=\"_xclick\" type=\"hidden\">
+			<input name=\"business\" value=\"faf@faithalivefellowship.org\" type=\"hidden\">
+			<input name=\"item_name\" value=\"Donation to Faith Alive Fellowship\" type=\"hidden\">
+			<input name=\"item_number\" value=\"faf-donate\" type=\"hidden\">
+			<input name=\"shipping\" value=\"0.00\" type=\"hidden\">
+			<input name=\"cn\" value=\"Note to FAF\" type=\"hidden\">
+			<input name=\"currency_code\" value=\"USD\" type=\"hidden\">
+			<input name=\"tax\" value=\"0\" type=\"hidden\">
+			<input name=\"lc\" value=\"US\" type=\"hidden\">
+			<input name=\"bn\" value=\"PP-DonationsBF\" type=\"hidden\">
+		</form>
+		<a href='#' onclick='document.getElementById(\"donate\").submit();'>
+			<h2 class='postTitle'>Make a Donation</h2>
+			<p class='postDescription limited'>If it's on your heart to make a donation, this link will take you to a secured PayPal donation page.</p>
+			<div class='fadeOutText'></div>
+		</a>
+	</div>
+	<div class='post limited'>
+		<a href='/outreach/travel/index.html'>
+			<h2 class='postTitle'>Travel Schedule</h2>
+			<p class='postDescription limited'>Schedule of upcoming events</p>
+			<div class='fadeOutText'></div>
+		</a>
+	</div>
+	<!--
+	<div class='smedia-feed'>
+    	<a class='twitter-timeline'  href='https://twitter.com/KnocksAtTheDoor/lists/faf-preachers' data-widget-id='654468130236796931'>Tweets from https://twitter.com/KnocksAtTheDoor/lists/faf-preachers</a>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','twitter-wjs');</script>
+    </div>
+    <div class='smedia-feed'>
+    	<a class='twitter-timeline'  href='https://twitter.com/KnocksAtTheDoor' data-widget-id='654469127445217280'>Tweets by @KnocksAtTheDoor</a>
+    	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','twitter-wjs');</script>
+    </div>    
+    -->        
+</div>
+	"
+}

@@ -1,0 +1,33 @@
+{
+	"title": "Ministries",
+	"header": "Ministries",
+	"meta_content": "There are a handful of age groups and activities at Faith Alive Fellowship, come check them out!",
+	"exclude": false,
+	"content": "
+<div class='linkHolder'>
+	<div class='post limited'>	
+		<a href='/ministries/toddlers.html'>
+			<h2 class='postTitle'>Toddler's Care</h2>
+			<p class='postDescription limited'>During Sunday morning worship and Thursday night prayer toddlers care is provided for up to 4 years of age. 
+	We have a dedicated room for the kiddos complimented with a closet full of toys,</p><div class='fadeOutText'></div>
+		</a>
+	</div>
+	<div class='post limited'>
+		<a href='/ministries/childrens.html'>
+		<h2 class='postTitle'>Children's Church</h2>
+		<p class='postDescription limited'>Come on in and join the all-original comic book curriculum featuring the <i>Warriors of the Word!</i>
+	 Childcare is provided for all regular services for ages 4 through 10. </p>
+		<div class='fadeOutText'></div>
+		</a>
+		
+	</div>
+	<div class='post limited'>
+		<a href='/ministries/youth.html'>
+		<h2 class='postTitle'>Youth Group</h2>
+		<p class='postDescription limited'>Youth group currently occurs as opportunities and interest arise. Ages 11 and up join the adults in the congregation during normal services.</p>
+	<div class='fadeOutText'></div>
+		</a>
+	</div>
+</div>
+	"
+}

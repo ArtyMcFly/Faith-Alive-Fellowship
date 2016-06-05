@@ -1,0 +1,32 @@
+{
+	"title": "Media",
+	"header": "Media",
+	"meta_content": "Within this corpus of books, sermons and prayers you'll find everything points back to the Word of God, points to Jesus, points truth and liable to set you free.",
+	"exclude": false,
+	"content": "
+<div class='linkHolder'>
+	<div class='post limited'>	
+		<a href='/media/books/index.html'>
+			<h2 class='postTitle'>Books</h2>
+			<p class='postDescription limited'></p>
+			<div class='fadeOutText'></div>
+		</a>
+	</div>
+	<div class='post limited'>
+		<a href='/media/prayers/index.html'>
+		<h2 class='postTitle'>Prayers</h2>
+		<p class='postDescription limited'></p>
+		<div class='fadeOutText'></div>
+		</a>
+		
+	</div>
+	<div class='post limited'>
+		<a href='/media/sermons/index.html'>
+		<h2 class='postTitle'>Sermons</h2>
+		<p class='postDescription limited'></p>
+	<div class='fadeOutText'></div>
+		</a>
+	</div>
+</div>
+	"
+}

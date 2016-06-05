@@ -1,0 +1,49 @@
+{
+	"title": "Our Partners and Affiliates",
+	"header": "Our Partners and Affiliates",
+	"meta_content": "People and Ministries we at Faith Alive Fellowship are proud to partner and affiliate with",
+	"exclude": false,
+	"css_file": "partners",
+	"content": "
+<div class='partner'>
+<h2>Larry Huggins</h2>
+<a href='http://www.kingsembassy.com'>The Commonwealth of Christ</a>
+</div><div class='partner'>
+<h2>Pastors Mike & Sandra Chipchase</h2>
+<a href='http://www.word-a-live.org'>Word-A-Live Family Church</a>
+</div><div class='partner'>
+<h2>Pastors Tony & Merry Kroeger</h2>
+<a href='http://www.abundantharvestnow.com'>Abundant Harvest Worship Center</a>
+</div><div class='partner'>
+<h2>Joan Pearce</h2>
+<a href='http://www.joanpearce.org'>Channel of Love Ministries</a>
+</div><div class='partner'>
+<h2>Pastors Mark & Bev Kopp</h2>
+<a href='http://www.fbtwc.com'>Freedom by the Word Church Hub (Shawano)</a>
+</div><div class='partner'>
+<h2>Pastors Billy & Linda</h2>
+<a href='http://www.fbtwc.com'>Freedom by the Word - Branch 1 (Oconto)</a>
+</div><div class='partner'>
+<h2>Pastors Chris & Dawn Dietsche</h2>
+<a href='http://www.fbtwc.com'>Freedom by the Word - Branch 2 (Wausau)</a>
+</div><div class='partner'>
+<h2>Pastors Bob & Laura Longan</h2>
+<a href='http://www.victorychristianmedford.com'>Victory Christian Center</a>
+</div><div class='partner'>
+<h2>Pastors Robert & Wendy Burbatt</h2>
+<a href='http://www.ifreedomhouse.org'>Freedom House Church</a>
+</div><div class='partner'>
+<h2>Pastor Brian Cunnings</h2>
+<a href='http://www.believersassemblyofcoarsegold.com'>Believer's Assembly of Coarsegold</a>
+</div><div class='partner'>
+<h2>Pastors Dennis & Sandy Toyne</h2>
+<a href='http://www.cfcgb.com'>Cornerstone Family Church</a>
+</div><div class='partner'>
+<h2>Mark Barclay</h2>
+<a href='http://www.marktbarclay.com'>Mark Barclay Ministries</a>
+</div><div class='partner'>
+<h2>Pastor John and Karan Pursell</h2>
+<a href='http://www.believerschurchofmadera.com'>Believer's Church of Madera</a>
+</div>
+	"
+}

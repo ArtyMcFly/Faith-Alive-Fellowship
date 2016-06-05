@@ -1,0 +1,52 @@
+{
+	"title": "About Us",
+	"header": "About Us",
+	"meta_content": "Through the internal links on this page one can find our core beliefs and history",
+	"exclude": false,
+	"header_content":"",
+	"content": "
+<div class='linkHolder'>
+	<div class='post limited'>	
+		<a href='/about_us/doctrine.html'>
+			<h2 class='postTitle'>What We Believe</h2>
+			<p class='postDescription limited'>We believe that the Bible is the inspired Word of God Equally in all parts and without error in its original manuscript, absolutely infallible, and our source of supreme revelation from God, superior to conscience and reason, though not contrary to reason; and it is therefore our infallible rule of faith and practice. (II Timothy 3:16-17; I Peter 1:23-25; Hebrews 4:12.)</p>
+			<div class='fadeOutText'></div>
+		</a>
+	</div>
+	<div class='post limited'>
+		<a href='/about_us/history.html'>
+		<h2 class='postTitle'>Our History</h2>
+		<p class='postDescription limited'>Page coming soon</p>
+		<div class='fadeOutText'></div>
+		</a>
+		
+	</div>
+	<div class='post limited'>
+		<a href='/about_us/vision.html'>
+		<h2 class='postTitle'>Our Vision</h2>
+		<p class='postDescription limited'>
+	To build a T.E.M.P.L.E. of the Living God among the people:
+
+	To TEACH and preach Jesus Christ though the uncompromising Word of God.
+
+	To EVANGELIZE families, our community, country, and the world.</p>
+	<div class='fadeOutText'></div>
+		</a>
+	</div>
+	<div class='post limited'>
+		<a href='/about_us/services.html'>
+		<h2 class='postTitle'>Service Times</h2>
+		<p class='postDescription limited'>All are welcome; come as you are and join us for either our normal worship and prayer services or for any of our special events!</p>
+		<div class='fadeOutText'></div>
+		</a>
+	</div>
+	<div class='post limited'>
+		<a href='/about_us/prophecies/index.html'>
+		<h2 class='postTitle'>Prophetic Words</h2>
+		<p class='postDescription limited'>Prophecy in it's most basic form is a God inspired statement in a known language. A prophecy from God edifies, exorts and confirms the plans and purposes that the Holy Ghost has put in someone's heart. The following prophecies have been spoken over Pastors Tom and Stella and the local church at various times in their ministry.</p>
+		<div class='fadeOutText'></div>
+		</a>
+	</div>
+</div>
+	"
+}

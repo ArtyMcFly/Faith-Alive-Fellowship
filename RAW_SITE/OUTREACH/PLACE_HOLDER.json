@@ -1,0 +1,43 @@
+{
+	"title": "Outreach",
+	"header": "Outreach",
+	"meta_content": "",
+	"exclude": false,
+	"content": "
+<div class='linkHolder'>
+	<div class='post limited'>	
+		<a href='/outreach/partners.html'>
+			<h2 class='postTitle'>Partner Ministries</h2>
+			<p class='postDescription limited'>We're proud to be connected in the body of Christ, please check out some of our partner ministries</p><div class='fadeOutText'></div>
+		</a>
+	</div>
+	<div class='post limited'>	
+		<a href='/outreach/booking.html'>
+			<h2 class='postTitle'>Booking Information</h2>
+			<p class='postDescription limited'>Page coming soon</p><div class='fadeOutText'></div>
+		</a>
+	</div>
+	<div class='post limited'>	
+		<a href='/outreach/galleries.html'>
+			<h2 class='postTitle'>Galleries</h2>
+			<p class='postDescription limited'>Page coming soon</p><div class='fadeOutText'></div>
+		</a>
+	</div>
+	<div class='post limited'>
+		<a href='/outreach/news/'>
+		<h2 class='postTitle'>Recent News</h2>
+		<p class='postDescription limited'>Page coming soon</p>
+		<div class='fadeOutText'></div>
+		</a>
+		
+	</div>
+	<div class='post limited'>
+		<a href='/outreach/travel/index.html'>
+		<h2 class='postTitle'>Travel Schedule</h2>
+		<p class='postDescription limited'>Schedule of upcoming events</p>
+	<div class='fadeOutText'></div>
+		</a>
+	</div>
+</div>
+	"
+}

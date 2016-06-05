@@ -1,0 +1,19 @@
+div.partner h2{
+	text-align:center;
+	margin:0px;
+	/*text-shadow: 2px 2px black;*/
+	color:#3D0305;
+	background:#EDD08C;
+	border-bottom: 1px solid #2D0305;
+}
+div.partner{
+	margin:10px;
+	border-radius:3px;
+	border:1px solid #3D0305;
+	text-align:center;
+	background:rgba(255, 255, 255, .5);
+}
+
+div.partner:hover{
+	box-shadow: 0px 0px 5px #6687BD;
+}

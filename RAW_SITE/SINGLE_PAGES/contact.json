@@ -1,0 +1,90 @@
+{
+	"title": "Contact",
+	"header": "Contact",
+	"meta_content": "Have you been ministered to by God through this ministry? Would you like to invite Pastor Tom to preach? Please contact us, we'd love to hear from you!",
+	"exclude": false,
+	"content": "
+		<blockquote>      
+			<p><font face='Arial'><b>Comments/Questions/Prayer       Requests?<br>      </b><i><font size='2'>We would love to hear from you!</font></i></font></p>
+<script>
+function FrontPage_Form1_Validator(theForm){
+  if (theForm.name.value == ''){
+    alert('Please enter a value for the \"Name\" field.');
+    theForm.name.focus();
+    return false;
+  }
+  if (theForm.name.value.length < 2){
+    alert('Please enter at least 2 characters in the \"Name\" field.');
+    theForm.name.focus();
+    return false;
+  }
+  if (theForm.email.value == ''){
+    alert('Please enter a value for the \"Email\" field.');
+    theForm.email.focus();
+    return false;
+  }
+  if (theForm.email.value.length < 2){
+    alert('Please enter at least 2 characters in the \"Email\" field.');
+    theForm.email.focus();
+    return false;
+  }
+  return true;
+}
+</script>
+<form action='mailer.php' method='post' onsubmit='return FrontPage_Form1_Validator(this)' language='JavaScript' name='FrontPage_Form1'> 
+	<table border='0' cellpadding='0' cellspacing='0' style='border-collapse: collapse' bordercolor='#111111' id='AutoNumber1'>          
+		<tr>            
+			<td width='9%' align='right' valign='top'><b>            <font face='Arial' size='2'>Name:</font></b></td>            
+			<td width='1%'>&nbsp;</td>            
+			<td width='90%'>            
+			<input type='text' name='name' size='35'>
+			</td>          
+		</tr>          
+		<tr>            
+			<td width='9%' align='right' valign='top'><b>            <font face='Arial' size='2'>Email:</font></b></td>            
+			<td width='1%'>&nbsp;</td>            
+			<td width='90%'><input type='text' name='email' size='35'></td>         
+		</tr>          
+		<tr>            
+			<td width='9%' align='right' valign='top'>            <font face='Arial' size='2'><b>Address:<br>            </b>
+				</font><i><font face='Arial' size='1'>optional</font></i></td>            
+			<td width='1%' valign='top'>&nbsp;</td>            
+			<td width='90%' valign='top'>            <input type='text' name='address' size='35'></td>          
+		</tr>          
+		<tr>            
+			<td width='9%' align='right' valign='top'><b>            <font face='Arial' size='2'>Phone:<br>            </font></b>
+				<i><font face='Arial' size='1'>optional</font></i></td>            
+			<td width='1%' valign='top'>&nbsp;</td>            
+			<td width='90%' valign='top'>            <input type='text' name='phone' size='35'></td>         
+		</tr>          
+		<tr>            
+			<td width='9%' align='right' valign='top'><b>            <font face='Arial' size='2'>Message:</font></b></td>            
+			<td width='1%'>&nbsp;</td>            
+			<td width='90%'><textarea rows='4' name='comments' cols='29'></textarea></td>          
+		</tr>          
+		<tr>            
+			<td width='9%' align='right'>&nbsp;</td>            
+			<td width='1%'>&nbsp;</td>            
+			<td width='90%'>&nbsp;</td>          
+		</tr>        
+	</table>        
+	<p><input type='submit' value='Submit' name='B1'><input type='reset' value='Reset' name='B2'></p>      
+</form>    
+<div style=\"text-align:center;\">  
+	<p>
+  	<b><font face='Arial' size='2' >Mailing Address:<br>      </font></b>
+  	<font face='Arial' size='2' >P.O. Box 605<br>      Sturgeon Bay, WI 54235</font>
+  	</p>
+  	      
+  	<p>
+  	<b><font face='Arial' size='2' >Sunday &amp; Thursday       Services:<br>      </font></b>
+  	<font face='Arial' size='2' >55 W. Walnut St<br>      Sturgeon Bay, WI 54235<b><br>      </b></font>
+  	</p>    
+  	       
+	<b><font face='Arial' size='2' ></font>
+	<p><b><font face='Arial' size='2' >E-Mail:<br>     </b> 
+	</font><font face='Arial' size='2' >      
+	<a href='mailto:faf@faithalivefellowship.org'><font>      faf@faithalivefellowship.org</font></a> </font></p>
+</div>
+"
+}

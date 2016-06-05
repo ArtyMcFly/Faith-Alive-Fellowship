@@ -1,0 +1,39 @@
+{
+	"title": "Leadership",
+	"header": "Leadership",
+	"meta_content": "Come meet the pastors, leadership and help teams at Fatih Alive Fellowship",
+	"exclude": false,
+	"content": "
+<div class='linkHolder'>
+	<div class='post limited'>	
+		<a href='/leadership/pastors.html'>
+			<h2 class='postTitle'>Meet the Pastors</h2>
+			<p class='postDescription limited'><b>Thomas C. Terry</b> and his wife <b>Stella</b> have been serving in the ministry for 37 years. They have worked in all areas of ministry such as street witnessing, jail ministry, leading bible studies, serving the children and youth and working in all other aspects of helps ministry. They have served as deacons and elders, later becoming associate pastors. They established their first church in Reno, NV and through the years have established churches in California, Oregon, Wisconsin and Pakistan.</p>
+			<div class='fadeOutText'></div>
+		</a>
+	</div>
+	<div class='post limited'>
+		<a href='/leadership/staff.html'>
+		<h2 class='postTitle'>Meet the Leadership</h2>
+		<p class='postDescription limited'><b>Tim and Jennifer Kornowski</b>
+
+Pastor Tim and Jennifer Kornowski are the associate pastors of Faith Alive Fellowship. They work in the ministry of family pastors. They both teach and preach in the church and serve where needed in all areas of ministry at Faith Alive Fellowship.
+</p>
+		<div class='fadeOutText'></div>
+		</a>
+		
+	</div>
+	<div class='post limited'>
+		<a href='/leadership/helps.html'>
+		<h2 class='postTitle'>Meet the Helps Team</h2>
+		<p class='postDescription limited'><b>Our Greeters</b><br><br>
+    Lanette Koors<br>
+    Dee Snell<br>
+    Arthur Weborg<br>
+    Kate Weborg<br></p>
+	<div class='fadeOutText'></div>
+		</a>
+	</div>
+</div>
+	"
+}
