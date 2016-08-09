@@ -76,7 +76,7 @@ function createPage($jsonObj){
 				<a href="https://www.facebook.com/pages/Faith-Alive-Fellowship/522267067929628?sk=timeline"><div id="Facebook"></div></a>
 				<a href="https://www.youtube.com/user/fafvideo1"><div id="Youtube"></div></a>
 				<a href="https://twitter.com/KnocksAtTheDoor"><div id="Twitter"></div></a>
-				<a href="https://plus.google.com/105193550972623336765/posts"><div id="Google"></div></a>
+				<a href="https://plus.google.com/112284199753242978219/posts"><div id="Google"></div></a>
 				<!-- <div class="connect"></div> -->
 			</div>
 			<a href="/"><h1 class="title2">FAITH ALIVE FELLOWSHIP</h1></a>
