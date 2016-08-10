@@ -46,7 +46,7 @@ function renderHomePage(){
 	$jsonObj = json_decode($json_file);
 	$jsonObj->url = $target_url;
 	$jsonObj->fname = "index.html";
-	print_r($jsonObj);
+	//print_r($jsonObj);
 	createPage($jsonObj);
 }
 //DOCTRINE
@@ -57,7 +57,7 @@ function renderDoctrine(){
 	$jsonObj = json_decode($json_file);
 	$jsonObj->url = $target_url."about_us";
 	$jsonObj->fname = "doctrine.html";
-	print_r($jsonObj);
+	//print_r($jsonObj);
 	createPage($jsonObj);
 	addSiteMapEntry("about_us/doctrine.html",date("Y-m-d",filemtime($path)),"yearly","0.1");
 }
@@ -72,7 +72,7 @@ function renderHistory(){
 	$jsonObj = json_decode($json_file);
 	$jsonObj->url = $target_url."about_us";
 	$jsonObj->fname = "history.html";
-	print_r($jsonObj);
+	//print_r($jsonObj);
 	createPage($jsonObj);
 }
 //PROPHECIES
@@ -120,7 +120,7 @@ function renderServices(){
 	$jsonObj = json_decode($json_file);
 	$jsonObj->url = $target_url."about_us";
 	$jsonObj->fname = "services.html";
-	print_r($jsonObj);
+	//print_r($jsonObj);
 	createPage($jsonObj);
 }
 //VISION
@@ -134,7 +134,7 @@ function renderVision(){
 	$jsonObj = json_decode($json_file);
 	$jsonObj->url = $target_url."about_us";
 	$jsonObj->fname = "vision.html";
-	print_r($jsonObj);
+	//print_r($jsonObj);
 	createPage($jsonObj);
 }
 //ABOUT US
@@ -148,7 +148,7 @@ function renderAboutUs(){
 	$jsonObj = json_decode($json_file);
 	$jsonObj->url = $target_url."about_us";
 	$jsonObj->fname = "index.html";
-	print_r($jsonObj);
+	//print_r($jsonObj);
 	createPage($jsonObj);
 }
 //EVENTS
@@ -171,7 +171,7 @@ function renderEvents(){
 	foreach($foundFiles as $file) {
 	    $tjsonObj = json_decode(file_get_contents(dirname(__FILE__).'/RAW_SITE/EVENTS/'.$file));
 		$tjsonObj->url = $target_url."events";
-		print_r($file);
+		//print_r($file);
 		createPage($tjsonObj);
 		addSiteMapEntry("events/".$tjsonObj->fname,date("Y-m-d",filemtime($path)),"daily","0.3");
 		$content .= "<div class='post limited' style=\"z-index: 0\">	
@@ -184,7 +184,7 @@ function renderEvents(){
 	}
 	$content .= "</div>";
 	$jsonObj = json_decode(file_get_contents($path));
-	// print_r($jsonObj);
+	// //print_r($jsonObj);
 	$jsonObj->url = $target_url."events";
 	$jsonObj->fname = "index.html";
 	// $jsonObj->header = "Preaching Engagements";
@@ -200,7 +200,7 @@ function renderHelps(){
 	$jsonObj = json_decode($json_file);
 	$jsonObj->url = $target_url."leadership";
 	$jsonObj->fname = "helps.html";
-	print_r($jsonObj);
+	//print_r($jsonObj);
 	createPage($jsonObj);
 	addSiteMapEntry("leadership/helps.html",date("Y-m-d",filemtime($path)),"yearly","0.2");
 }
@@ -212,7 +212,7 @@ function renderPastors(){
 	$jsonObj = json_decode($json_file);
 	$jsonObj->url = $target_url."leadership";
 	$jsonObj->fname = "pastors.html";
-	print_r($jsonObj);
+	//print_r($jsonObj);
 	createPage($jsonObj);
 	addSiteMapEntry("leadership/pastors.html",date("Y-m-d",filemtime($path)),"yearly","0.6");
 }
@@ -224,7 +224,7 @@ function renderStaff(){
 	$jsonObj = json_decode($json_file);
 	$jsonObj->url = $target_url."leadership";
 	$jsonObj->fname = "staff.html";
-	print_r($jsonObj);
+	//print_r($jsonObj);
 	createPage($jsonObj);
 	addSiteMapEntry("leadership/staff.html",date("Y-m-d",filemtime($path)),"yearly","0.4");
 }
@@ -236,7 +236,7 @@ function renderLeadership(){
 	$jsonObj = json_decode($json_file);
 	$jsonObj->url = $target_url."leadership";
 	$jsonObj->fname = "index.html";
-	print_r($jsonObj);
+	//print_r($jsonObj);
 	createPage($jsonObj);
 	addSiteMapEntry("leadership/index.html",date("Y-m-d",filemtime($path)),"yearly","0.5");
 }
@@ -248,7 +248,7 @@ function renderMedia(){
 	$jsonObj = json_decode($json_file);
 	$jsonObj->url = $target_url."media";
 	$jsonObj->fname = "index.html";
-	print_r($jsonObj);
+	//print_r($jsonObj);
 	createPage($jsonObj);
 	addSiteMapEntry("media/index.html",date("Y-m-d",filemtime($path)),"monthly","1.0");
 }
@@ -338,7 +338,7 @@ function renderSermons(){
 	$foundFiles = array();
 	
 	foreach($dir as $file) {
-		echo $file."\n";
+		//echo $file."\n";
 		if(substr($file,0,1) != 'P' && !$file->isDot() && !$file->isDir()){
 			array_push($foundFiles, $file->getFilename());
 		}elseif($file->isDir() && !$file->isDot()){
@@ -347,7 +347,7 @@ function renderSermons(){
 	}
 	asort( $foundFiles );
 	foreach($foundFiles as $file) {
-		echo dirname(__FILE__).'/RAW_SITE/MEDIA/SERMONS/'.$file;
+		//echo dirname(__FILE__).'/RAW_SITE/MEDIA/SERMONS/'.$file;
 	    $tjsonObj = json_decode(file_get_contents(dirname(__FILE__).'/RAW_SITE/MEDIA/SERMONS/'.$file));
 		$tjsonObj->url = $target_url."media/sermons";
 		//$tjsonObj->fname = str_replace(".json",".html",$file);
@@ -377,7 +377,7 @@ function renderChildrens(){
 	$jsonObj = json_decode($json_file);
 	$jsonObj->url = $target_url."ministries";
 	$jsonObj->fname = "childrens.html";
-	print_r($jsonObj);
+	//print_r($jsonObj);
 	createPage($jsonObj);
 	addSiteMapEntry("ministries/childrens.html",date("Y-m-d",filemtime($path)),"yearly","0.4");
 }
@@ -389,7 +389,7 @@ function renderToddlers(){
 	$jsonObj = json_decode($json_file);
 	$jsonObj->url = $target_url."ministries";
 	$jsonObj->fname = "toddlers.html";
-	print_r($jsonObj);
+	//print_r($jsonObj);
 	createPage($jsonObj);
 	addSiteMapEntry("ministries/toddlers.html",date("Y-m-d",filemtime($path)),"yearly","0.4");
 }
@@ -401,7 +401,7 @@ function renderYouth(){
 	$jsonObj = json_decode($json_file);
 	$jsonObj->url = $target_url."ministries";
 	$jsonObj->fname = "youth.html";
-	print_r($jsonObj);
+	//print_r($jsonObj);
 	createPage($jsonObj);
 	addSiteMapEntry("ministries/youth.html",date("Y-m-d",filemtime($path)),"yearly","0.4");
 }
@@ -413,7 +413,7 @@ function renderMinistries(){
 	$jsonObj = json_decode($json_file);
 	$jsonObj->url = $target_url."ministries";
 	$jsonObj->fname = "index.html";
-	print_r($jsonObj);
+	//print_r($jsonObj);
 	createPage($jsonObj);
 	addSiteMapEntry("ministries/index.html",date("Y-m-d",filemtime($path)),"yearly","0.5");
 }
@@ -425,7 +425,7 @@ function renderBooking(){
 	$jsonObj = json_decode($json_file);
 	$jsonObj->url = $target_url."outreach";
 	$jsonObj->fname = "booking.html";
-	print_r($jsonObj);
+	//print_r($jsonObj);
 	createPage($jsonObj);
 	addSiteMapEntry("outreach/booking.html",date("Y-m-d",filemtime($path)),"monthly","0.2");
 }
@@ -437,7 +437,7 @@ function renderGalleries(){
 	$jsonObj = json_decode($json_file);
 	$jsonObj->url = $target_url."outreach";
 	$jsonObj->fname = "galleries.html";
-	print_r($jsonObj);
+	//print_r($jsonObj);
 	createPage($jsonObj);
 	addSiteMapEntry("outreach/galleries.html",date("Y-m-d",filemtime($path)),"monthly","0.8");
 }
@@ -452,16 +452,20 @@ function renderNews(){
 		    $tjsonObj = json_decode(file_get_contents(dirname(__FILE__).'/RAW_SITE/OUTREACH/NEWS/'.$file));
 			$tjsonObj->url = $target_url."outreach/news";
 			
-			createPage($tjsonObj);
-			addSiteMapEntry("outreach/news/".$tjsonObj->fname,date("Y-m-d",filemtime($path)),"daily","0.5");
-			
-			$content .= "<div class='post limited'>	
-				<a href='/outreach/news/".$tjsonObj->fname."'>
-					<h2 class='postTitle'>".$tjsonObj->header."</h2>
-					<p class='postDescription limited'>".substr($tjsonObj->content,0,200)."</p>
-					<div class='fadeOutText'></div>
-				</a>
-			</div>";
+			if(isset($tjsonObj->render) && !$tjsonObj->render){
+				//do nothing
+			}else{
+				createPage($tjsonObj);
+				addSiteMapEntry("outreach/news/".$tjsonObj->fname,date("Y-m-d",filemtime($path)),"daily","0.5");
+				
+				$content .= "<div class='post limited'>	
+					<a href='/outreach/news/".$tjsonObj->fname."'>
+						<h2 class='postTitle'>".$tjsonObj->header."</h2>
+						<p class='postDescription limited'>".substr($tjsonObj->content,0,200)."</p>
+						<div class='fadeOutText'></div>
+					</a>
+				</div>";
+			}
 		}
 	}
 	$content .= "</div>";
@@ -481,7 +485,7 @@ function renderPartners(){
 	$jsonObj = json_decode($json_file);
 	$jsonObj->url = $target_url."outreach";
 	$jsonObj->fname = "partners.html";
-	print_r($jsonObj);
+	//print_r($jsonObj);
 	createPage($jsonObj);
 	addSiteMapEntry("outreach/partners.html",date("Y-m-d",filemtime($path)),"yearly","0.3");
 }
@@ -534,7 +538,7 @@ function renderOutreach(){
 	$jsonObj = json_decode($json_file);
 	$jsonObj->url = $target_url."outreach";
 	$jsonObj->fname = "index.html";
-	print_r($jsonObj);
+	//print_r($jsonObj);
 	createPage($jsonObj);
 	addSiteMapEntry("outreach/index.html",date("Y-m-d",filemtime($path)),"monthly","0.7");
 }
@@ -546,7 +550,7 @@ function renderContact(){
 	$jsonObj = json_decode($json_file);
 	$jsonObj->url = $target_url;
 	$jsonObj->fname = "contact.html";
-	print_r($jsonObj);
+	//print_r($jsonObj);
 	createPage($jsonObj);
 	addSiteMapEntry("contact.html",date("Y-m-d",filemtime($path)),"yearly","0.1");
 }
@@ -558,7 +562,7 @@ function renderSalvation(){
 	$jsonObj = json_decode($json_file);
 	$jsonObj->url = $target_url;
 	$jsonObj->fname = "salvation.html";
-	print_r($jsonObj);
+	//print_r($jsonObj);
 	createPage($jsonObj);
 	addSiteMapEntry("salvation.html",date("Y-m-d",filemtime($path)),"yearly","0.1");
 }

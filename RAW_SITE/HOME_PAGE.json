@@ -10,19 +10,7 @@
 
 <div class='linkHolder'>
 	<div class='post limited'>
-		<form id='donate' action=\"https://www.paypal.com/cgi-bin/webscr\" method=\"post\">
-			<input name=\"cmd\" value=\"_xclick\" type=\"hidden\">
-			<input name=\"business\" value=\"faf@faithalivefellowship.org\" type=\"hidden\">
-			<input name=\"item_name\" value=\"Donation to Faith Alive Fellowship\" type=\"hidden\">
-			<input name=\"item_number\" value=\"faf-donate\" type=\"hidden\">
-			<input name=\"shipping\" value=\"0.00\" type=\"hidden\">
-			<input name=\"cn\" value=\"Note to FAF\" type=\"hidden\">
-			<input name=\"currency_code\" value=\"USD\" type=\"hidden\">
-			<input name=\"tax\" value=\"0\" type=\"hidden\">
-			<input name=\"lc\" value=\"US\" type=\"hidden\">
-			<input name=\"bn\" value=\"PP-DonationsBF\" type=\"hidden\">
-		</form>
-		<a href='#' onclick='document.getElementById(\"donate\").submit();'>
+		<a href='https://www.paypal.me/faithalivefellowship'>
 			<h2 class='postTitle'>Make a Donation</h2>
 			<p class='postDescription limited'>If it's on your heart to make a donation, this link will take you to a secured PayPal donation page.</p>
 			<div class='fadeOutText'></div>

@@ -1,40 +1,45 @@
 <?php 
 function createPage($jsonObj){
-	print_r($jsonObj);
-	$page_title = $jsonObj->title;
-	$meta_content = $jsonObj->meta_content;
-	$page_header = $jsonObj->header;
-	$rel_url = $jsonObj->url;
-	echo $rel_url;
-	$filename = $jsonObj->fname;
-	$page_content = $jsonObj->content;
-	$create_date = $jsonObj->cdate;
-	$mod_date = $jsonObj->mdate;
-	$exclude = $jsonObj->exclude;
-	$css_file = $jsonObj->css_file;
-	$header_content = $jsonObj->header_content;
-	if (!$exclude) { $exclude = false; }
-	if (!$page_title) { $page_title = "FAF - Template"; }
-	if (!$meta_content) { $meta_content = "150-160 character summary with keywords on this article"; }
-	if( strlen($page_title) > 55 ) { throw new Exception("Your title needs to be shorter"); }
-	if (strpos($page_title, "-- Faith Alive Fellowship") !== false) {
-		 throw new Exception("Remove deprecated values"); 
+	//print_r($jsonObj);
+	if(isset($jsonObj->render) && !$jsonObj->render){
+		//do nothing
+		echo "skipping: $jsonObj->url/$jsonObj->fname";
+		echo "\n";
 	}else{
-		 $page_title .= " - Faith Alive Fellowship";
-	}
-	if (!$rel_url) { throw new Exception("You forgot to define the URL"); }
-	if (!$page_header) { throw new Exception("You forgot to define a page header"); }
-	if (!$filename) { throw new Exception("You done messed up"); } else { $filename = str_replace(".php",".html",$filename); }
-	if (!$page_content) { throw new Exception("Missing page"); }
-	// if (strlen($meta_content) < 150) {throw new Exception("Your Meta is too short ");}
-	// if (strlen($meta_content) > 160) {throw new Exception("Your Meta is too long ");}
-	echo basename(dirname(__DIR__));
-	echo "\n";
-	// $rel_url = substr($rel_url,strpos($rel_url,"POSTS")+6);
-	echo "\n";
-	echo "$rel_url/$filename";
-	echo "\n";
-	ob_start();
+		$page_title = $jsonObj->title;
+		$meta_content = $jsonObj->meta_content;
+		$page_header = $jsonObj->header;
+		$rel_url = $jsonObj->url;
+		// echo $rel_url;
+		$filename = $jsonObj->fname;
+		$page_content = $jsonObj->content;
+		$create_date = $jsonObj->cdate;
+		$mod_date = $jsonObj->mdate;
+		$exclude = $jsonObj->exclude;
+		$css_file = $jsonObj->css_file;
+		$header_content = $jsonObj->header_content;
+		if (!$exclude) { $exclude = false; }
+		if (!$page_title) { $page_title = "FAF - Template"; }
+		if (!$meta_content) { $meta_content = "150-160 character summary with keywords on this article"; }
+		if( strlen($page_title) > 55 ) { throw new Exception("Your title needs to be shorter"); }
+		if (strpos($page_title, "-- Faith Alive Fellowship") !== false) {
+			 throw new Exception("Remove deprecated values"); 
+		}else{
+			 $page_title .= " - Faith Alive Fellowship";
+		}
+		if (!$rel_url) { throw new Exception("You forgot to define the URL"); }
+		if (!$page_header) { throw new Exception("You forgot to define a page header"); }
+		if (!$filename) { throw new Exception("You done messed up"); } else { $filename = str_replace(".php",".html",$filename); }
+		if (!$page_content) { throw new Exception("Missing page"); }
+		// if (strlen($meta_content) < 150) {throw new Exception("Your Meta is too short ");}
+		// if (strlen($meta_content) > 160) {throw new Exception("Your Meta is too long ");}
+		// echo basename(dirname(__DIR__));
+		// echo "\n";
+		// $rel_url = substr($rel_url,strpos($rel_url,"POSTS")+6);
+		// echo "\n";
+		// echo "$rel_url/$filename";
+		// echo "\n";
+		ob_start();
 ?>
 <!DOCTYPE html>
 <html>
@@ -118,9 +123,8 @@ function createPage($jsonObj){
 				<a href="https://www.facebook.com/thomas.c.terry"><div id="Facebook"></div></a>
 				<a href="https://www.youtube.com/user/MrThomascterry"><div id="Youtube"></div></a>
 				<a href="https://twitter.com/wildmanfromWisc"><div id="Twitter"></div></a>
-				<a href="https://plus.google.com/112284199753242978219"><div id="Google"></div></a>
+				<a href="https://plus.google.com/100356734350950392592"><div id="Google"></div></a>
 				<a href="https://www.linkedin.com/pub/thomas-terry/47/7b0/782"><div id="LinkedIn"></div></a>
-				<a href="https://katch.me/wildmanfromWisc"><div id="Katch"></div></a>
 				<a href="https://www.periscope.tv/wildmanfromWisc"><div id="Periscope"></div></a>
 			</aside>
 		</article>
@@ -135,17 +139,18 @@ function createPage($jsonObj){
 	</body>
 </html>
 <?php
-	if(!file_exists("$rel_url")){
-		mkdir("$rel_url", 0755, true);
+		if(!file_exists("$rel_url")){
+			mkdir("$rel_url", 0755, true);
+		}
+		$order   = array("\r\n\r\n", "\n\n", "\r\r");
+		$replace = '<br><br>';
+	
+		// Processes \r\n's first so they aren't converted twice.
+		$newstr = str_replace($order, $replace,ob_get_contents());
+		file_put_contents("$rel_url/$filename", $newstr);
+		chmod("$rel_url/$filename", 0644);
+		ob_end_flush();
 	}
-	$order   = array("\r\n\r\n", "\n\n", "\r\r");
-	$replace = '<br><br>';
-
-	// Processes \r\n's first so they aren't converted twice.
-	$newstr = str_replace($order, $replace,ob_get_contents());
-	file_put_contents("$rel_url/$filename", $newstr);
-	chmod("$rel_url/$filename", 0644);
-	ob_end_flush();
 }
 function createSubArticle($ptitle,$mcontent,$phead,$content,$exclude){
 	$page_title = $GLOBALS['ptitle'];
